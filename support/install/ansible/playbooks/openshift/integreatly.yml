@@ -98,7 +98,7 @@
         threescale_admin_access_token: "{{ hostvars['SHARED_VARS']['threescale_admin_token'] }}"
         sso_project: sso
         threescale_realm: "threescale"
-        threescale_client_id: "3scale"
+        threescale_client_id: "3scale-admin"
         namespace: 3scale
         no_threescale_services: "false"
       tags: threescale
