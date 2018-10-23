@@ -24,3 +24,5 @@ create_tenants: true
 create_realms: true
 create_ides: true
 create_fuses: true
+threescale_admin_access_token: "mastertoken"
+threescale_admin_access_token: "admintoken"

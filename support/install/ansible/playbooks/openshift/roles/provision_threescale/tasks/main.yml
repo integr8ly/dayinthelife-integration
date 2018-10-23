@@ -32,6 +32,7 @@
     account_id: '3'
     name: 'Location API'
     backend_version: '1'
+    configure_only: '{{setup_threescale_service|configure_only}}'
     system_name: 'location-api'
     proxy_config: 
       production_endpoint: 'https://location-api.amp.{{ ocp_apps_domain }}:443'
@@ -82,6 +83,7 @@
     name: 'SSO Location API'
     backend_version: 'oidc'
     system_name: 'location-sso'
+    configure_only: '{{setup_threescale_service|configure_only}}'
     proxy_config: 
       production_endpoint: 'https://location-sso.amp.{{ ocp_apps_domain }}:443'
       staging_endpoint: 'https://location-sso-staging.amp.{{ ocp_apps_domain }}:443'

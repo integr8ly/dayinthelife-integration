@@ -88,6 +88,7 @@
         threescale_master_access_token: "{{ hostvars['SHARED_VARS']['threescale_master_token'] }}"
         threescale_admin_access_token: "{{ hostvars['SHARED_VARS']['threescale_admin_token'] }}"
         namespace: 3scale
+        setup_threescale_service: "true"
       tags: threescale
     - include_role:
         name: provision_apicurio
