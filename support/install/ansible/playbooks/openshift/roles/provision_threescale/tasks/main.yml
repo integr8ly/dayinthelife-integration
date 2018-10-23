@@ -32,7 +32,7 @@
     account_id: '3'
     name: 'Location API'
     backend_version: '1'
-    configure_only: '{{setup_threescale_services}}'
+    configure_only: '{{no_threescale_services}}'
     system_name: 'location-api'
     proxy_config: 
       production_endpoint: 'https://location-api.amp.{{ ocp_apps_domain }}:443'
@@ -51,6 +51,7 @@
   -H 'Content-Type: application/x-www-form-urlencoded' -d 'username={{ eval_rhsso_admin_username | default('keyadmin') }}' -d 'password={{ eval_rhsso_admin_password | default('keypassword') }}' -d 'grant_type=password' -d 'client_id=admin-cli'"
   register: token_text
   when: TKN is undefined
+  tag: threescale-sso-token
 
 - set_fact: TKN={{ (token_text.stdout | from_json).access_token }}
   when: TKN is undefined
