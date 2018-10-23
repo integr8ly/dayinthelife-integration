@@ -89,7 +89,7 @@
         threescale_master_access_token: "{{ hostvars['SHARED_VARS']['threescale_master_token'] }}"
         threescale_admin_access_token: "{{ hostvars['SHARED_VARS']['threescale_admin_token'] }}"
         sso_project: sso
-        threescale_realm: "master"
+        threescale_realm: "openshift"
         threescale_client_id: "3scale"
         namespace: 3scale
         no_threescale_services: "false"
