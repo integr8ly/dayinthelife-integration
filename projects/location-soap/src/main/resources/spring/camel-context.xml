@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:camel="http://camel.apache.org/schema/spring"
+    xmlns:cxf="http://camel.apache.org/schema/cxf"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="                  http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd                               http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd                        http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf-spring.xsd">
+    <!-- Define a traditional camel context here -->
+    <cxf:cxfEndpoint address="/location"
+        id="locationDetailServiceEndpoint" serviceClass="com.redhat.LocationDetailService"/>
+    <bean class="com.redhat.processor.ResultProcessor" id="resultProcessor"/>
+    <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+        <route id="_route1">
+            <from id="_from1" uri="cxf:bean:locationDetailServiceEndpoint"/>
+            <log id="_log1" message="INPUT ------- ID ------- ${body}"/>
+            <convertBodyTo id="_convertBodyTo1" type="java.lang.Integer"/>
+            <to id="_to1" uri="sql:select id,phone,owner,operating_hour from location_detail where id=:#${body}?dataSource=dataSource"/>
+            <choice id="_choice1">
+                <when id="_when1">
+                    <simple>${body.size} &gt; 0</simple>
+                    <bean id="_bean1" ref="resultProcessor"/>
+                </when>
+            </choice>
+        </route>
+    </camelContext>
+</beans>
