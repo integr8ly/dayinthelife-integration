@@ -1,9 +1,8 @@
-= Lab 3
+= Developer Lab 3 Swagger to REST
 :experimental:
 
-== Swagger to REST
 
-=== Contract-first API development with a database interface, implemented using Eclipse Che
+Contract-first API development with a database interface, implemented using Eclipse Che
 
 * Duration: 20 mins
 * Audience: Developers and Architects

@@ -1,4 +1,4 @@
-= Lab  1 API Design
+= Developer Lab  1 API Design
 
 Import an OpenAPI Specification using Apicurio Studio
 

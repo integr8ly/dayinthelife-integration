@@ -1,4 +1,4 @@
-= Lab  4 Managing API Endpoints
+= Citizen Lab  4 Managing API Endpoints
 
 Take control of your APIs
 

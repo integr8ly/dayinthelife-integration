@@ -1,4 +1,4 @@
-= Lab  6 Managed API Endpoints
+= Developer Lab  6 Managed API Endpoints
 
 Take control of your APIs
 

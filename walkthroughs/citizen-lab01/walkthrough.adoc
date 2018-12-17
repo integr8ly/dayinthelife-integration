@@ -1,4 +1,4 @@
-= Lab  1 API Design
+= Citizen Lab  1 API Design
 
 Create an OpenAPI Specification using Apicurio Studio
 

@@ -1,7 +1,6 @@
-= Lab 5
+= Developer Lab 5 Fuse Online
 :experimental:
 
-== Fuse Online
 
 * Duration: 20 mins
 * Audience: Developers and Architects

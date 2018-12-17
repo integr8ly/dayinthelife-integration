@@ -1,4 +1,4 @@
-= Lab  2 API Mocking
+= Citizen Lab  2 API Mocking
 
 Bring your APIs to life
 

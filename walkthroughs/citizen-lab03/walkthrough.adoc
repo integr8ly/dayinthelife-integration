@@ -1,7 +1,5 @@
-= Lab 3
+= Citizen Lab 3 Fuse Online
 :experimental:
-
-== Fuse Online
 
 * Duration: 20 mins
 * Audience: Developers and Architects

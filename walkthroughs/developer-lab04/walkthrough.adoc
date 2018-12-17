@@ -1,4 +1,4 @@
-= Lab  4 SOAP to REST
+= Developer Lab  4 SOAP to REST
 
 Contract-first API development wrapping an existing SOAP service, implemented using Eclipse Che
 

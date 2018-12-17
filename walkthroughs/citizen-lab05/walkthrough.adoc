@@ -1,4 +1,4 @@
-= Lab  5 API Security
+= Citizen Lab  5 API Security
 
 Securing APIs with OpenID Connect and Red Hat Single Sign On
 
