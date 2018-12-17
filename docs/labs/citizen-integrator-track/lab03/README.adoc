@@ -148,7 +148,7 @@ image::images/12-configure-mapper.png[12-configure-mapper.png]
 
 image::images/13-publish-integration.png[13-publish-integration.png]
 
-_Congratulations_. You sucessfully published the integration. (Wait for few minutes to build and publish the integration)
+_Congratulations_. You successfully published the integration. (Wait for few minutes to build and publish the integration)
 
 === Step 3: Create a POST request
 

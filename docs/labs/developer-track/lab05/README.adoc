@@ -111,7 +111,7 @@ image::images/06-incoming-webhook.png[06-incoming-webhook.png]
 
 image::images/07-webhook-configuration.png[07-webhook-configuration.png]
 
-. Define the Output Data Type. `Select type` from the dropdown as `JSON instance`. Enter `Data type Name: Custom`. `Defination: `, copy below JSON data. Click *Done*.
+. Define the Output Data Type. `Select type` from the dropdown as `JSON instance`. Enter `Data type Name: Custom`. `Definition: `, copy below JSON data. Click *Done*.
 +
 ----
      {
@@ -156,7 +156,7 @@ image::images/12-configure-mapper.png[12-configure-mapper.png]
 
 image::images/13-publish-integration.png[13-publish-integration.png]
 
-_Congratulations_. You sucessfully published the integration. (Wait for few minutes to build and publish the integration)
+_Congratulations_. You successfully published the integration. (Wait for few minutes to build and publish the integration)
 
 === Step 3: Create a POST request
 

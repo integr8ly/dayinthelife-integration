@@ -126,7 +126,7 @@ _If you feel more comfortable, you can also copy and paste the RAW button link f
  http://microcks.dil.opentry.me/
 ----
 
-. Log in into Microks using your designated <<environment,user and password>>.
+. Log in into Microcks using your designated <<environment,user and password>>.
 +
 image::images/mock-10.png[mock-openshift-login]
 
@@ -147,7 +147,7 @@ _You can also copy and paste the raw url you saved from the Gogs repository (Ste
 +
 image::images/mock-13.png[mock-job-details]
 . Click *Next* for the Authentication options.
-. Review the details and click on *Create* to creat the job.
+. Review the details and click on *Create* to create the job.
 +
 image::images/mock-14.png[mock-job-details]
 
@@ -155,7 +155,7 @@ image::images/mock-14.png[mock-job-details]
 +
 image::images/mock-15.png[mock-job-activate]
 
-. Repet the last step, but now select the *Force Import* option. This will start the synchronization job.
+. Repeat the last step, but now select the *Force Import* option. This will start the synchronization job.
 +
 image::images/mock-16.png[mock-job-start]
 
