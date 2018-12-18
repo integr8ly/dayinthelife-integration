@@ -46,15 +46,15 @@ https://tutorial-web-app-webapp.dil.opentry.me
 
 You will be presented with a login page where you can enter your unique credentials:
 
-image::images/design-50.png[design-login]
+image::images/design-50.png[design-login, 1024]
 
 Enter your credentials and click *Log in*.  You'll notice a web-page appear which explains that a _unique environment_ is being provisioned.
 
-image::images/design-51.png[design-login]
+image::images/design-51.png[design-login, 1024]
 
 Once the environment is provisioned, you will be presented with a page that presents all the available applications which you'll need in order to complete the labs:
 
-image::images/design-52.png[design-login]
+image::images/design-52.png[design-login, 1024]
 
 == Lab Instructions
 
@@ -74,11 +74,11 @@ Your 3scale Admin Portal provides access to a number of configuration features. 
 . Accept the self-signed certificate if you haven't.
 . Log into 3scale using your designated <<environment,user and password>>. Click on *Sign In*.
 +
-image::images/01-login.png[01-login.png]
+image::images/01-login.png[01-login.png, 1024]
 
 . The first page you will land is the _API Management Dashboard_. Click on the *Gear Icon* on the top right-hand corner.
 +
-image::images/02-personalsettings.png[02-personalsettings.png]
+image::images/02-personalsettings.png[02-personalsettings.png, 1024]
 
 . Click onto  *Tokens* Tab.
  image:images/03-tokentab.png[03-tokentab.png]
@@ -86,11 +86,11 @@ image::images/02-personalsettings.png[02-personalsettings.png]
  image:images/06-menu.png[06-menu.png]
 . Create a new token that has the Read & Writeable rights to your management platform. Enter Name as *securetoken*, check the *Account management API* checkbox and *READ & WRITE* for Permission.
 +
-image::images/04-setuptoken.png[04-setuptoken.png]
+image::images/04-setuptoken.png[04-setuptoken.png, 1024]
 
 . Please make sure you copy the *Token* to somewhere safe, and don't forget it. Click on *I have copied the token* to finish off.
 +
-image::images/05-token.png[05-token.png]
+image::images/05-token.png[05-token.png, 1024]
 
 === Step 2: Start managing your APIs
 

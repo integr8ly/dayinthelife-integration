@@ -46,15 +46,15 @@ https://tutorial-web-app-webapp.dil.opentry.me
 
 You will be presented with a login page where you can enter your unique credentials:
 
-image::images/design-50.png[design-login]
+image::images/design-50.png[design-login, 1024]
 
 Enter your credentials and click *Log in*.  You'll notice a web-page appear which explains that a _unique environment_ is being provisioned.
 
-image::images/design-51.png[design-login]
+image::images/design-51.png[design-login, 1024]
 
 Once the environment is provisioned, you will be presented with a page that presents all the available applications which you'll need in order to complete the labs:
 
-image::images/design-52.png[design-login]
+image::images/design-52.png[design-login, 1024]
 
 == Lab Instructions
 
@@ -67,26 +67,26 @@ OpenShift let you automatically redeploy your changes when you setup a Continuou
 . Go back to your OpenShift web console. Navigate to your project's overview page.
 . Scroll down and click in the www link in the BUILDS section.
 +
-image::images/deploy-10.png[01-scroll-down]
+image::images/deploy-10.png[01-scroll-down, 1024]
 
 . In the build configuration page, replace the `CLIENT_ID` from ``CHANGE_ME``to the one generated from https://github.com/RedHatWorkshops/dayinthelife-integration/tree/master/docs/labs/citizen-integrator-track/lab06#step-3-login-to-developer-portal[Lab 06 Step 3.5]
 +
-image::images/deploy-11.png[02-client-id]
+image::images/deploy-11.png[02-client-id, 1024]
 
 . Click Save button to persist the changes. A green pop up will show you that the changes were saved.
 . Click the Start Build button to trigger a new build using the new environment variables pointing to your service.
 +
-image::images/deploy-12.png[03-start-build]
+image::images/deploy-12.png[03-start-build, 1024]
 
 . A new build will be triggered. Expand the row by clicking the Builds Icon.
 +
-image::images/deploy-13.png[04-view-build]
+image::images/deploy-13.png[04-view-build, 1024]
 
 _The build process checks out the code from the git repo, runs a source-to-image container image build, and redeploys the container with the new image using a rolling upgrade strategy._
 
 . Wait for until the new Build to complete and the rolling upgrade to finish to test your new deployment.
 +
-image::images/consume-22.png[22-updated-app]
+image::images/consume-22.png[22-updated-app, 1024]
 
 === Step 2: Update Secured Service with Red Hat Single Sign On Application Callback
 
@@ -103,11 +103,11 @@ _Remember to replace the X with your user number._
 
 . Log into Red Hat Single Sign On using your designated <<environment,user and password>>. Click on *Sign In*.
 +
-image::images/00-login-sso.png[00-login-sso.png]
+image::images/00-login-sso.png[00-login-sso.png, 1024]
 
 . Select *Clients* from the left menu.
 +
-image::images/00-clients.png[00-clients.png]
+image::images/00-clients.png[00-clients.png, 1024]
 +
 _3scale, through it's https://github.com/3scale/zync/[zync] component, already synchronized the application information into the Red Hat SSO security realm_.
 
@@ -115,7 +115,7 @@ _3scale, through it's https://github.com/3scale/zync/[zync] component, already s
 +
 _Remember to select correct CLIENT_ID with the one you got in the link:../lab07[API Security Lab]. It will easily identifiable as its and hexadecimal name_.
 +
-image::images/consume-24.png[24-client-application]
+image::images/consume-24.png[24-client-application, 1024]
 
 . Scroll down, type in and select the following options in the application configuration:
 +
@@ -140,7 +140,7 @@ image::images/consume-24.png[24-client-application]
 +
 _Remember to replace the X with your user number._
 +
-image::images/consume-25.png[25-client-config]
+image::images/consume-25.png[25-client-config, 1024]
 
 . Finally, click *Save* button to persist the changes.
 
@@ -156,10 +156,10 @@ _Remember to replace the X your user number._
  ** Password: *password you received from instructor*
 
 +
-image::images/consume-23.png[23-realm-login]
+image::images/consume-23.png[23-realm-login, 1024]
 . You will be redirected again to the *LOCATIONS* page where now you will be able to see the map with the International Inc Offices.
 +
-image::images/consume-14.png[11-locations-page]
+image::images/consume-14.png[11-locations-page, 1024]
 
 _Congratulations!_ You have successfully used the Keycloak Javascript Adapter to protect International Inc's Locations Service with Single Sign On.
 
