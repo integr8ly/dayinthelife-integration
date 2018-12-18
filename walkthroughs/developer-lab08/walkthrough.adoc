@@ -5,7 +5,7 @@ Connect Applications and APIs
 * Duration: 15 mins
 * Audience: API Consumers, Developers, Architects
 
-=*Overview*
+*Overview*
 
 APIs provide the building blocks for applications, but it is applications which deliver functionality to the end users. hence to see APIs in action it helps to see how applications can call APIs to provide new functionality. In this lab you'll be able to create a simple web application which consumes the API you built earlier in the exercises.
 

@@ -5,7 +5,7 @@ Testing your web application
 * Duration: 10 mins
 * Audience: API Consumers, Developers, Architects
 
-=*Overview*
+*Overview*
 
 This lab demonstrates the International Inc. Locations page using our newly authenticated locations API.
 
