@@ -41,15 +41,15 @@ https://tutorial-web-app-webapp.dil.opentry.me
 
 You will be presented with a login page where you can enter your unique credentials:
 
-image::images/design-50.png[design-login, 1024]
+image::images/design-50.png[design-login, role="integr8ly-img-responsive"]
 
 Enter your credentials and click *Log in*.  You'll notice a web-page appear which explains that a _unique environment_ is being provisioned.
 
-image::images/design-51.png[design-login, 1024]
+image::images/design-51.png[design-login, role="integr8ly-img-responsive"]
 
 Once the environment is provisioned, you will be presented with a page that presents all the available applications which you'll need in order to complete the labs:
 
-image::images/design-52.png[design-login, 1024]
+image::images/design-52.png[design-login, role="integr8ly-img-responsive"]
 
 == Lab Instructions
 
@@ -70,11 +70,11 @@ Follow this instructions to set up the repository.
 
 . Log into Gogs using your designated <<environment,user and password>>. Click on *Sign In*.
 +
-image::images/mock-01.png[mock-sign-in, 1024]
+image::images/mock-01.png[mock-sign-in, role="integr8ly-img-responsive"]
 
 . In the main page, click in the *+* sign in the right top corner to display the _New_ menu. Click the *New Migration* option.
 +
-image::images/mock-02.png[mock-gogs-new, 1024]
+image::images/mock-02.png[mock-gogs-new, role="integr8ly-img-responsive"]
 
 . Fill in the information of the repository migration with the following values:
  ** Clone Address: *https://github.com/RedHatWorkshops/dayinthelife-openapi.git*
@@ -82,31 +82,31 @@ image::images/mock-02.png[mock-gogs-new, 1024]
  ** Repository Name: *locations-api*
 
 +
-image::images/mock-03.png[mock-gogs-migration, 1024]
+image::images/mock-03.png[mock-gogs-migration, role="integr8ly-img-responsive"]
 . Click on *Migrate Repository* to fork the GitHub repo into Gogs.
 . Switch to branch `dev-track-lab-02`
 +
-image::images/mock-04.png[mock-gogs-upload, 1024]
+image::images/mock-04.png[mock-gogs-upload, role="integr8ly-img-responsive"]
 
 . Open the `locations-api` folder and click on the filename link *Locations-UserX.json* to open and review the file.
 +
-image::images/mock-05.png[mock-gogs-file, 1024]
+image::images/mock-05.png[mock-gogs-file, role="integr8ly-img-responsive"]
 
 . If everything is fine, click the *Edit* button to apply your personal user settings.
 +
-image::images/mock-06.png[mock-gogs-file, 1024]
+image::images/mock-06.png[mock-gogs-file, role="integr8ly-img-responsive"]
 
 . Replace *UserX* with your user number.
 +
-image::images/mock-07.png[mock-gogs-file, 1024]
+image::images/mock-07.png[mock-gogs-file, role="integr8ly-img-responsive"]
 
 . Commit the changes to gogs.
 +
-image::images/mock-08.png[mock-gogs-file, 1024]
+image::images/mock-08.png[mock-gogs-file, role="integr8ly-img-responsive"]
 
 . Click the *RAW* button to get the raw download version of the file.
 +
-image::images/mock-09.png[mock-gogs-file, 1024]
+image::images/mock-09.png[mock-gogs-file, role="integr8ly-img-responsive"]
 
 . Copy the browser tab URL. Store that URL address as you will use it in the next steps of the lab. The URL should look like the following:
 +
@@ -128,15 +128,15 @@ _If you feel more comfortable, you can also copy and paste the RAW button link f
 
 . Log in into Microcks using your designated <<environment,user and password>>.
 +
-image::images/mock-10.png[mock-openshift-login, 1024]
+image::images/mock-10.png[mock-openshift-login, role="integr8ly-img-responsive"]
 
 . You are now in the main Microcks page. Click the *Importers* button to access the Importers page.
 +
-image::images/mock-11.png[mock-jobs, 1024]
+image::images/mock-11.png[mock-jobs, role="integr8ly-img-responsive"]
 
 . Click the *Create* button to create your first job.
 +
-image::images/mock-12.png[mock-jobs, 1024]
+image::images/mock-12.png[mock-jobs, role="integr8ly-img-responsive"]
 
 . In the `Create a New Job` dialog, type in the following information replacing *X* with your user number. Click *Next*.
  ** Name: *Locations-UserX*
@@ -145,37 +145,37 @@ image::images/mock-12.png[mock-jobs, 1024]
 +
 _You can also copy and paste the raw url you saved from the Gogs repository (Step 0)_.
 +
-image::images/mock-13.png[mock-job-details, 1024]
+image::images/mock-13.png[mock-job-details, role="integr8ly-img-responsive"]
 . Click *Next* for the Authentication options.
 . Review the details and click on *Create* to create the job.
 +
-image::images/mock-14.png[mock-job-details, 1024]
+image::images/mock-14.png[mock-job-details, role="integr8ly-img-responsive"]
 
 . After your job is created, click on the *Activate* option.
 +
-image::images/mock-15.png[mock-job-activate, 1024]
+image::images/mock-15.png[mock-job-activate, role="integr8ly-img-responsive"]
 
 . Repeat the last step, but now select the *Force Import* option. This will start the synchronization job.
 +
-image::images/mock-16.png[mock-job-start, 1024]
+image::images/mock-16.png[mock-job-start, role="integr8ly-img-responsive"]
 
 . Refresh your window to get it to the latest state.
 . You will see 3 labels next to your Job. Click the *Services* label.
 +
-image::images/mock-17.png[mock-job-services, 1024]
+image::images/mock-17.png[mock-job-services, role="integr8ly-img-responsive"]
 
 . In the dialog you will see your service listed. Click on the *Locations-UserX - 1.0.0.* link.
 +
-image::images/mock-18.png[mock-job-service, 1024]
+image::images/mock-18.png[mock-job-service, role="integr8ly-img-responsive"]
 
 . Click *Close* to dismiss the dialog.
 . This is your new REST mock service based on the OpenAPI definition you just loaded to Microcks. Click on the arrow to expand the *GET /locations* operation.
 +
-image::images/mock-19.png[mock-mock-service, 1024]
+image::images/mock-19.png[mock-mock-service, role="integr8ly-img-responsive"]
 
 . You can check that the example we added to the definition in xref:lab01.adoc[Lab 1] will be used to return the mock values. Scroll down, copy and save the *Mocks URL*, we will use that endpoint to test the REST mock service.
 +
-image::images/mock-20.png[mock-mock-operation, 1024]
+image::images/mock-20.png[mock-mock-operation, role="integr8ly-img-responsive"]
 
 === Step 2: Test the REST Mock Service
 
@@ -199,11 +199,11 @@ _Remember to replace X with your user number_.
 
 . Click the *START YOUR CURL* button.
 +
-image::images/mock-21.png[mock-curl-service, 1024]
+image::images/mock-21.png[mock-curl-service, role="integr8ly-img-responsive"]
 
 . The page will load the response information from the service. You will be able to see the _RESPONSE HEADERS_ and the actual _RESPONSE_BODY_. This last part contains the examples we add during the design phase.
 +
-image::images/mock-22.png[mock-curl-response, 1024]
+image::images/mock-22.png[mock-curl-response, role="integr8ly-img-responsive"]
 
 _Congratulations!_ You have successfully configure a Microcks Job to create a REST mock service to test your API.
 
